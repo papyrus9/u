@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Emotion To Emoji</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+    <body>
+        <h1>
+            emociones
+        </h1>
+        <br>
+        <br>
+      <h1>
+        <span>&#128522;</span>
+        <span>&#128512;</span>
+        <span>&#128532;</span>
+        <span>&#128546;</span>
+        <span>&#128545;</span>
+        <span>&#128548;</span>
+      </h1>
+      <div id="webcam"></div>
+      <br>
+      <button onclick="foto()" class="btn btn-danger">
+    foto
+      </button>
+      <div class="col-md-4 col-sm-12 col-xs-12"> 
+    <label>Prediction 1 - </label> 
+    <p class="emotion_name" id="result_emotion_name"></p> 
+    <p class="emoji" id="update_emoji"></p> 
+    <label>Prediction 2 - </label> 
+    <p class="emotion_name" id="result_emotion_name2"></p> 
+    <p class="emoji" id="update_emoji2"></p> 
+</div>
+<div id="results"></div>
+<br>
+<button onclick="boton()" class="btn btn-info">
+tus emociones
+</button>
+<script src="js.js">
+
+</script>
+    </body>
+</html>
